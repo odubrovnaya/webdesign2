@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+/*general styles*/
+
+body {
+    margin-top:0;
+    background-color:#ebebeb;
+}
+
+p {
+    font-family: 'Roboto', 'Noto Nastaliq Urdu', sans-serif ;
+    color: #383838;
+}
+
+.wrapper {
+    width:965px;
+    margin: 0 auto;
+}
+
+header{
+    background: url("../images/210118_r37731.jpeg")  no-repeat;
+    height: 300px;
+    padding-bottom: 10px;
+}
+
+/* Header -----*/
+
+#logo {
+    width:190px;
+    margin:0 auto;
+    padding: 0;
+    height:50px;
+}
+
+#logo a{
+    display: block;
+    width: 190px;
+    height: 50px;
+}
+
+img.logo{
+    width: 190px;
+    height: 50px;
+}
+
+/* Content --------*/
+#content {
+    width:965px;
+    float:left;
+    padding: 20px 0  20px 0;
+}
+
+#content h1{
+    color: #3f3f3f;
+    font: 30px 'Roboto', 'Noto Nastaliq Urdu', sans-serif ;
+    margin: 0; padding: 0;
+}
+
+.portrait{
+    float: left;
+    padding-right: 20px;
+    height: 230px;
+}
+
+.biography{
+    padding: 0 0 20px 0;
+    margin-bottom: 30px;
+    float: left;
+    width: 965px;;
+}
+
+/*gallery page*/
+.photogallery{
+    background-color: #5c5c5c;
+    clear: left;
+    padding: 30px 0;
+    margin-top: 20px;
+    width: 965px;
+}
+
+.featured-group {
+    margin: 0 auto;
+    width: 900px;
+
+}
+.featured {
+    display:inline-block;
+    text-align: center;
+    background-color:#fff;
+    /*margin-left: -.36em; to rid of space between li*/
+    position: relative;
+}
+
+
+.featured img {
+    height: 283px;
+    margin:0;padding:0;
+    width: 282px;
+}
+
+.featured p{ color:#f6983d;}
+
+.first{
+    float: left;
+    margin-right: 27px ;
+}
+
+.third{
+    float: right;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Contact Form -----*/
+.contact_page{
+    width:965px;
+    float: left;
+    margin: 30px 0;
+    clear: both;
+}
+.contact_form{
+    margin-right:25px;
+    display:inline-block;
+    position: relative;
+}
+
+.contact_form a{
+    text-decoration: none;
+    color: #9db135;
+}
+
+.contact_form a:hover { color:#f6983d; text-decoration:none;}
+
+.contact_page h1{
+    color: #ed2b38;
+    font: 30px 'Roboto', 'Noto Nastaliq Urdu', sans-serif ;
+    margin: 0; padding: 0;
+}
+
+.form_style{
+    background-color: #77ae64;
+    padding: 20px 0;
+    width: 965px;
+}
+
+form{
+    width: 420px;
+    margin: 0 auto;
+}
+
+.form_block{
+    margin-bottom: 20px;
+}
+
+label{
+    color: white;
+    font: 15px 'Roboto', 'Noto Nastaliq Urdu', sans-serif;
+    display: block;
+}
+
+label span{color: #ec2a36;}
+
+input,textarea {
+    padding: 0.5em 0.6em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0.25em 0;
+    width: 400px;
+}
+
+label {margin: 0.25em 0;}
+
+fieldset {border:0; margin: 0; padding: 0;}
+
+.submit_btn{
+    margin: 0 auto;
+    width:150px;
+}
+.submit {
+    background-color:#95e005;
+    color: white;
+    width:150px;
+    padding:10px;
+    border:0;
+    font-size:1em;
+}
+
+.submit:hover {background-color:#456409;}
+
+/* Footer --------*/
+footer {
+    height:44px;
+    padding: 10px 20px 0 20px;
+    clear:both; /*heights should be deleted once you add content*/
+}
+
+.footer_left { float: left;}
+.footer_right{ float: right;}
+
+.footer_text{
+    font: 14px 'Roboto', 'Noto Nastaliq Urdu', sans-serif ;
+    color: #8c8c8c;
+    margin-top: 5px;
+}
+
+ul.social_icons{
+    padding: 0;
+    margin: 0;
+}
+ul.social_icons li {
+    display:inline-block;
+    list-style: none;
+}
+
+.facebook, .twitter, .instagram, .pinterest{
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.facebook {
+    background: url("../images/f_icon.png")  no-repeat 0 0;
+    background-size: 40px;
+}
+.twitter {
+    background: url("../images/t_icon.png")  no-repeat 0 0;
+    background-size: 40px;
+}
+.instagram {
+    background: url("../images/i_icon.png")  no-repeat 0 0;
+    background-size: 40px;
+}
+.pinterest {background: url("../images/p_icon.png")  no-repeat 0 0;
+    background-size: 40px;
+}
+
+.facebook:hover{
+    background: url("../images/f_icon.png")  no-repeat  0 -40px;
+    background-size: 40px;
+}
+
+.twitter:hover{
+    background: url("../images/t_icon.png")  no-repeat  0 -40px;
+    background-size: 40px;
+}
+
+.instagram:hover{
+    background: url("../images/i_icon.png")  no-repeat  0 -40px;
+    background-size: 40px;
+}
+
+.pinterest:hover{
+    background: url("../images/p_icon.png")  no-repeat  0 -40px;
+    background-size: 40px;
+}
+
