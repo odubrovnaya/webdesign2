@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kids Education Blog</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="wrapper">
+
+    <header class="header_style">
+        <div id="logo"><a href="index.html"><img src="images/logo.png" alt="logo" class="logo" /></a></div>
+        <div>
+            <nav>
+                <input type="checkbox" name="menu" id="btn-menu" />
+                <label for="btn-menu"></label>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="r_content">
+      <div class="r_inform_page">
+       <h1 class="inform_page_h">Contact</h1>
+         <p class="contact_p">If you would like to contact us you can
+            email us at  <a href="#" class="contact_form" >artwithkids@gmail.com</a>
+            You can also use this form.
+         </p>
+         <form action="form.php">
+          <fieldset>
+            <div class="form_block">
+             <label>Email<span>*</span></label>
+             <input type="text" maxlength="25" placeholder="email@email.com">
+            </div>
+            <div class="form_block">
+             <label>Subject<span>*</span></label>
+             <input type="email" maxlength="25" placeholder="Activities...">
+            </div>
+            <div class="form_block">
+             <label>Message<span>*</span></label>
+             <textarea cols="40" rows="8" maxlength="200"></textarea>
+            </div>
+
+            <p>
+             <label>
+              <input type="radio" name="RadioGroup1" value="google" id="RadioGroup1_0">
+               Google search
+             </label>
+             <label>
+              <input type="radio" name="RadioGroup1" value="friend" id="RadioGroup1_1">
+              Friend recommendation
+             </label>
+             <label>
+              <input type="radio" name="RadioGroup1" value="other" id="RadioGroup1_2">
+              Other
+             </label>
+             </p>
+
+             <p>
+              <input type="checkbox" name="Newsletter" value="checkbox" id="Newsletter_0">
+              <label>Sign me up for your newsletter<br/></label>
+             </p>
+
+             <input type="submit" class="submit">
+            </fieldset>
+           </form>
+      </div>
+    </section>
+
+    <footer>
+        <div class="footer_text">© 2021 Art with Kids</div>
+    </footer>
+
+
+
+</body>
+</html>

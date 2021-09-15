@@ -1,0 +1,380 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+
+/*--- general styles*/
+
+body {
+    /*background: url("../images/bg2.jpg")  no-repeat 0 0;
+    background-size: 100%;*/
+    background-color: #e0c9a0;
+    margin:0;
+    padding: 0;
+    overflow-y:scroll;
+}
+
+p {
+    font-family: 'Roboto', 'Noto Nastaliq Urdu', sans-serif ;
+    color: #525252;
+}
+
+
+/* ------ Header ------------------------*/
+.header_style{
+    float: left;
+    padding-top: 50px;
+    width: 100%;
+}
+
+#logo {
+    width:190px;
+    float: left;
+    height:50px;
+}
+
+img.logo{
+    width: 100%;
+    height: 50px;
+}
+
+/* ---- Content (Home Page)--------------------------------*/
+#r_content {
+    background-color: white;
+    width:100%;
+    float:left;
+}
+
+.article_block, .article_block2, .article_block3, .article_block4{
+    float: left;
+    width: 100%;
+}
+
+.article_block{
+    background: url("../images/DSC_6301.jpg")  no-repeat 0 0;
+    background-size: 700px;
+}
+
+.article_block2{
+    background: url("../images/DSC_6300.jpg")  no-repeat right 0;
+    background-size: 700px;
+
+}
+
+.article_block3{
+    background: url("../images/DSC_6302.jpg")  no-repeat 0 0;
+    background-size: 700px;
+}
+
+.article_block4{
+    background: url("../images/DSC_6303.jpg")  no-repeat right 0;
+    background-size: 700px;
+}
+
+.article_p{
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 20px 30px 20px 30px;
+}
+.article_block_txt{
+    background-color: #ffd200;
+    color: #6b4208;
+    float: right;
+    width: 55%;
+}
+
+.article_block_txt2{
+    background-color: #0588c5;
+    color: white;
+    float: left;
+    width: 55%;
+}
+
+.article_block_txt3{
+    background-color: #ff9000;
+    color: white;
+    float: right;
+    width: 55%;
+}
+
+.article_block_txt4{
+    background-color: #b61100;
+    color: white;
+    float: left;
+    width: 55%;
+}
+
+.txt_color{
+    color: white;
+}
+
+.txt_color2{
+    color: #250300;
+}
+
+.article_block_h{
+    font: 2em 'Roboto Slab', 'Georgia', serif;
+    margin: 20px 30px 0 30px;
+}
+
+
+/* --- About Us --------------------------------------*/
+
+.r_inform_page{
+    width:94%;
+    font: 1em 'Montserrat', sans-serif;
+    padding: 0 3%;
+    margin-bottom: 30px;
+}
+
+.inform_page_h{
+    color: #bd4400;
+    font: 2em 'Roboto Slab', 'Georgia', serif;
+    margin: 20px 30px 20px 0;
+}
+
+.r_inform_page img{
+    float: left;
+    padding: 20px 20px 20px 0;
+    width: 40%;
+    clear: both;
+}
+
+
+/* ----- Contact ------------------------------------*/
+
+.contact_p{
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: o;
+}
+
+.contact_form{
+    text-decoration: none;
+    color: #0588c5;
+}
+
+.contact_form:hover { color:#f6983d; text-decoration:none;}
+
+form{
+    width: 400px;
+    margin: 0; padding: 0;
+}
+
+.form_block{
+    margin-bottom: 20px;
+}
+
+label{
+    color: #4f4f4f;
+    font: 15px 'Roboto', 'Noto Nastaliq Urdu', sans-serif;
+    display: block;
+    width: 400px;
+}
+
+label span{color: #ec2a36;}
+
+input, textarea {
+    padding: 0.5em 0.6em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0.25em 0;
+}
+
+label {margin: 0.25em 0;}
+
+fieldset {border:0; margin: 0; padding: 0;}
+
+.submit {
+    background-color:#ffd200;
+    color: #250300;
+    width:150px;
+    padding:10px;
+    border:0;
+    font-size:1em;
+}
+
+.submit:hover {
+    color: white;
+    background-color:#0588c5;
+}
+
+/* ---- Articles --------------------------------------*/
+
+.post_block{
+    border-bottom: 1px solid #065d8a;
+    float: left;
+    font-family: 'Montserrat', sans-serif ;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.post_block_img{
+    float: left;
+    width: 30%;
+}
+
+.post_block_img img{
+    width: 100%;
+}
+
+.post_block_txt{
+    float: right;
+    padding-left: 3%;
+    width: 67%;
+}
+
+
+
+/* ---- Footer --------------------------------------*/
+footer {
+    background-color: #4f4f4f;
+    height:44px;
+    padding-top: 10px;
+    clear:both;
+    width: 100%;
+}
+
+.footer_text{
+    font: 14px 'Roboto', 'Noto Nastaliq Urdu', sans-serif ;
+    color: #aeaeae;
+    margin: 5px 0 0 20px;
+}
+
+/* media query for tablet and desktop styles. The css outside that media
+query will affect mobile (unless you specify more media queries) */
+@media (min-width: 480px)
+{
+    /*this sets the width of the comp in the mobile that allows for some margin
+    left and right. It's also common to set the wrapper to 100% so you can use
+    all the space.*/
+    #wrapper {
+        width:80%;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+}
+
+
+/* -- Toggle menu ----------------------------------*/
+
+nav{
+    background-color: #0588c5;
+    float: right;
+    color: #fff;
+    font-family: 'Roboto', 'Noto Nastaliq Urdu', Open sans-serif, sans-serif;
+    text-align: center;
+    width: 50%;
+}
+
+nav > ul {
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+nav a{
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+nav a:hover{
+    border: 1px solid #fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+nav label {
+    display: none;
+    background: url("../images/toggleicon.png")  no-repeat 0 0;
+    background-size: 50px;
+    padding: 0;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50px;
+}
+nav label:hover{
+    background: url("../images/toggleicon.png")  no-repeat 0 0;
+    background-size: 50px;
+}
+
+
+
+/* media query for tablet and desktop styles.  */
+
+@media screen and (max-width: 800px) {
+    .article_block_txt, .article_block_txt2, .article_block_txt3, .article_block_txt4{
+        margin-top: 150px;
+        width: 100%;
+    }
+
+    #logo{
+        float: none;
+        margin: 0 auto;
+    }
+
+    .r_about_page img{
+        width: 100%;
+    }
+
+    .r_about_page{
+        width:94%;
+        font: 1.2em 'Roboto', 'Noto Nastaliq Urdu', sans-serif ;
+        padding: 0 3%;
+        margin-bottom: 30px;
+    }
+
+    .post_block_img{
+        height: 200px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .post_block_txt{
+        width: 100%;
+    }
+
+    nav{
+        text-align: center;
+        width: 100%;
+    }
+
+    nav label{
+        display: inline-block;
+    }
+    nav > ul {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 950px){
+    .post_block_img{
+        float: left;
+        width: 10%;
+    }
+
+    .post_block_img img{
+        width: 100%;
+    }
+
+    .post_block_txt{
+        float: right;
+        padding-left: 3%;
+        width: 87%;
+    }
+}
