@@ -1,0 +1,410 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto', Open sans-serif, sans-serif;
+}
+
+.wrapper, .wrapper2 {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.wrapper{
+    background: url("../images/bg2.svg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.wrapper2{
+    background: url("../images/bgg.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+
+/* ------------------ Header -----------------------------------*/
+.header-style{
+    width: 100%;
+    grid-area: header;
+}
+
+#header-inner-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+#header-inner-grid2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+.left-block{
+    background: url("../images/left-cookie.png")  no-repeat -10px 10px;
+    background-size: 90%;
+    padding-top: 140%;
+}
+
+.right-block{
+    background: url("../images/right-cookie.png") no-repeat 50px 30px;
+    background-size: 90%;
+    padding-top: 130%;
+}
+
+.logo-block{
+    background: url("../images/logo.png") no-repeat center 25%;
+    background-size: 70%;
+    color: #68482e;
+    font: 1.4vw 'Roboto', SansSerif;
+    text-align: center;
+    padding: 75% 0 20% 0;
+}
+
+.logo-block2{
+    background: url("../images/logo2.png") no-repeat center 25%;
+    background-size: 50%;
+    padding-top: 25%;
+}
+/* ------------------ Home page -----------------------------------*/
+
+.content{
+    grid-area: content;
+}
+
+.content_txt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2vw;
+}
+
+.txt{
+    background-color: #ecbd00;
+    text-align: center;
+    padding: 30% 0;
+}
+
+.image{
+    background-color: #9db135;
+    text-align: center;
+    padding: 30% 0;
+ }
+
+.gallery{
+    grid-area: content;
+    padding: 3vw 0;
+    display: grid;
+    text-align: center;
+    grid-gap: 1vw;
+    grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col3-start] 1fr [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+}
+
+.a, .b, .c, .d{
+    padding: 30% 0;
+}
+
+.a {
+    background-color: #2da9ff;
+    grid-column: col1-start;
+    grid-row: row1-start / row2-end ;
+}
+
+.b {
+    background-color: #ec2a36;
+    grid-column: col3-start ;
+    grid-row: row1-start / row2-end;
+}
+
+.c {
+    background-color: #00a5f5;
+    grid-column: col2-start;
+    grid-row: row1-start;
+}
+
+.d {
+    background-color: #b09bc9;
+    grid-column: col2-start ;
+    grid-row: row2-start ;
+}
+
+/* ------------------ Content pages -----------------------------------*/
+
+.content{
+    grid-area: content;
+}
+
+.content-txt-block{
+    background-color: #b09bc9;
+    margin: 2vw 10%;
+    padding: 5vw 1vw;
+    text-align: center;
+    width: 80%;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-column-gap: 2vw;
+    padding: 2vw;
+}
+
+.menu1{
+    background-color: #ecbd00;
+    text-align: center;
+    padding: 30% 0;
+}
+
+.menu2{
+    background-color: #ecbd00;
+    text-align: center;
+    padding: 30% 0;
+}
+
+.menu3{
+    background-color: #ecbd00;
+    text-align: center;
+    padding: 30% 0;
+}
+
+.block-content{
+    background-color: #e87070;
+    text-align: center;
+    padding: 15% 0;
+    width: 100%;
+}
+
+/* ------------------ Footer -----------------------------------*/
+.footer_style{
+    background-color: #b61100;
+    padding: 1vw 0;
+    color: white;
+    text-align: center;
+    grid-area: footer;
+}
+
+/* -------------- Nav bar menu ----------------------------------*/
+
+nav{
+    background-color:  rgba(127, 78, 20, 0.4);
+    color: #fff;
+    font-family: 'Roboto', 'Noto Nastaliq Urdu', Open sans-serif, sans-serif;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav > ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    list-style: none;
+    padding:2vw 0;
+    width: 15%;
+}
+
+.menu-style,
+.menu-style:hover{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 1vw 2vw;
+}
+
+.menu-style:hover{
+    background-color: #68482e;
+    border-radius: 10px;
+    color:#fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+nav label {
+    display: none;
+    background: url("../images/toggleicon.png")  no-repeat 0 0;
+    background-size: 50px;
+    padding: 0;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50px;
+}
+nav label:hover{
+    background: url("../images/toggleicon.png")  no-repeat 0 0;
+    background-size: 50px;
+}
+
+
+/* ------ Pad ----------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .menu-style,
+    .menu-style:hover {
+        padding: 1vw 4px;
+    }
+
+    .logo-block{
+        font: 1.6vw 'Roboto', SansSerif;
+    }
+}
+
+
+/* ------ Mobile ----------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+    .wrapper{
+        background: url("../images/bg3.svg") no-repeat 0 0;
+        background-size: 100%;
+    }
+
+    .wrapper2{
+        background: url("../images/bgg2.png") no-repeat 0 0;
+        background-size: 100%;
+    }
+
+    /* -- Grid ------------------------*/
+
+    #header-inner-grid{
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+
+    .left-block{
+        display: none;
+    }
+
+    .right-block{
+        background: url("../images/right-cookie.png") no-repeat -10px 10px;
+        background-size: 140%;
+        padding-top: 330px;
+    }
+
+    .logo-block{
+        background: url("../images/logo.png") no-repeat 5px 70px;
+        background-size: 100%;
+        font: 4vw 'Roboto', SansSerif;
+        text-align: center;
+        padding: 90% 0 20px 20px;
+    }
+
+    .logo-block2{
+        background: url("../images/logo2.png") no-repeat center 45px;
+        background-size: 100%;
+        padding-top: 170px;
+    }
+
+    .content_txt{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery{
+        grid-template-columns: [col1-start] 1fr;
+        grid-template-rows: [row1-start] auto [row2-start] auto [row2-end] auto [row3-start] auto [row3-end];
+    }
+
+    .a {
+        background-color: #2da9ff;
+        grid-column: col1-start;
+        grid-row: row1-start;
+    }
+
+    .b {
+        background-color: #ec2a36;
+        grid-column: col1-start ;
+        grid-row: row2-start;
+    }
+
+    .c {
+        background-color: #00a5f5;
+        grid-column: col1-start;
+        grid-row: row3-start;
+    }
+
+    .d {
+        background-color: #b09bc9;
+        grid-column: col1-start ;
+        grid-row: row4-start ;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2vw;
+        grid-row-gap: 2vw;
+        padding: 2vw;
+    }
+
+    /* -- Toggle menu -----------------------*/
+
+
+    nav{
+        width: 100%;
+        text-align: left;
+    }
+
+    nav > ul {
+        background-color:  rgba(127, 78, 20, 0.4);
+        padding: 10px 10px;
+        width: 250px;
+    }
+
+    nav li{
+        vertical-align: top;
+        width: 230px;
+    }
+
+    .menu-style,
+    .menu-style:hover{
+        font-size: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        width: 230px;
+    }
+
+    .menu-style{
+        color: #fff;
+
+    }
+
+    .menu-style:hover{
+        background-color: #68482e;
+        color:#fff;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    nav label{
+        display: inline-block;
+    }
+
+    nav > ul {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        display: block;
+    }
+}
