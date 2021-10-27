@@ -521,7 +521,7 @@ nav label:hover{
         background-size: 100%;
         font: 4vw 'Roboto', SansSerif;
         text-align: center;
-        padding: 160px 0 60px 20px;
+        padding: 180px 0 120px 20px;
     }
 
     .logo-block2{
@@ -533,6 +533,7 @@ nav label:hover{
     .content_txt{
         display: grid;
         grid-template-columns: 1fr;
+        font-size: 4vw;
     }
 
     .image2{
@@ -609,11 +610,13 @@ nav label:hover{
 
 
     .gallery{
+        font-size: 4vw;
         grid-template-columns: [col1-start] 1fr;
         grid-template-rows: [row1-start] auto [row2-start] auto [row2-end] auto [row3-start] auto [row3-end] ;
     }
 
     .a {
+        font-size: 4vw;
         grid-column: col1-start;
         grid-row: row1-start;
     }
