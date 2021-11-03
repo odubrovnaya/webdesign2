@@ -1,0 +1,103 @@
+*{
+    margin: 0; padding:0; list-style: none;
+    box-sizing: border-box;
+}
+
+.container{
+    border-bottom:4px solid black;
+    background-color: white;
+    margin: 0 auto;
+    height: 254px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+.container ul li{
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+#block-1 {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    align-items: baseline;
+}
+
+#block-1 div {
+    flex: 1;
+    background-color: #9db135;
+    height: 100px;
+    width: 100px;
+}
+
+.block2{
+    background-color: #2da9ff;
+    height: 100px;
+    width: 100px;
+}
+#block-3 {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+}
+
+.block-4{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0; right: 0;
+}
+
+
+#block-4 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+}
+
+
+@keyframes mynewmove {
+    from {bottom: 0px;}
+    to {bottom: 200px;}
+}
+
+#block-5 {
+    background-color: #1a3883;
+    width: 100px;
+    height: 100px;
+}
+
+.buttons{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+.btn-style{
+    padding: 5px;
+    margin: 0 2px;
+    width: 100px;
+}
+
+.reload-style{
+    background-color: #c3ffe1;
+    border: 1px solid #3e8c04;
+    padding: 5px;
+    color: #3e8c04;
+    margin: 0 2px;
+    width: 100px;
+}
