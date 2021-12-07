@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Outfit:wght@200&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    width: 30%;
+}
+
+.img-block{
+    background: url("../img/bg.jpeg") black no-repeat 0 0;
+    background-size: 100%;
+    height: 65vw;
+    width: 70%;
+}
+
+.img{
+    width: 100%;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    padding: 30px 0 0 30px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    padding:0 0 30px 30px;
+}
+
+.date-pick{
+    padding:0 0 30px 30px;
+}
+
+span{
+    color: #818181;
+    font-size: 1.1vw;
+}
+
+.date-picker{
+    border: 2px solid #2da9ff;
+    border-radius: 3px;
+    padding:4px 6px;
+    margin-top: 5px;
+    width: 15vw;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: row;
+}
+
+.get-img{
+    margin: 24px 0 0 10px;
+}
+
+.get-img-bttn{
+    background-color: #2da9ff;
+    border: 2px solid #2da9ff;
+    border-radius: 3px;
+    color: white;
+    padding:4px 6px;
+}
+
+.get-img-bttn:hover{
+    background-color: #17224f;
+    border: 2px solid #17224f;
+}
+
+@media only screen and (max-width:480px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .img-block{
+        background: url("../img/bg.jpeg") black no-repeat 0 0;
+        background-size: 100%;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 15px;
+        padding:0 0 15px 30px;
+    }
+
+    span{
+        font-size: 13px;
+    }
+
+    .date-picker{
+        width: 200px;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    .sidebar{
+        width: 40%;
+    }
+
+    .img-block{
+        width: 60%;
+    }
+}

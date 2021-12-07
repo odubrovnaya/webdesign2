@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nasa Random Images</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="ui/jquery-3.6.0.js"></script>
+    <script src="ui/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+ <div class="content">
+     <div class="sidebar">
+         <h1>NASA API</h1>
+         <h2>Astronomy Picture of the Day</h2>
+         <div class="calendar">
+             <div class="date-pick">
+                 <p><span>Picture Date:</span><br>
+                     <input type="text" id="datepicker" class="date-picker"></p>
+             </div>
+             <div class="get-img">
+                 <input type="button" id="getImage" value="Get Image" class="get-img-bttn">
+             </div>
+             <script>
+                 $("#getImage").click(function () {
+                     imageAjaxRequest($("#datepicker").val());
+                 });
+             </script>
+       </div>
+     </div>
+
+
+     <div class="img-block">
+         <div><img src="" alt="" id="nasaImage" class="img"></div>
+     </div>
+ </div>
+</body>
+</html>
