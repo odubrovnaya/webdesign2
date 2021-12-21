@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olha Dubrovna: Final Project</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body class="donate-bg3 style3-bg">
+
+<nav class="top-nav">
+    <ul>
+        <li><a href="index.html" class="top-menu-style">Style 1</a></li>
+        <li><a href="index2.html" class="top-menu-style">Style 2</a></li>
+        <li><a href="index3.html" class="top-menu-style">Style 3</a></li>
+    </ul>
+</nav>
+<!------- Header --------->
+<header>
+    <div><a href="index3.html" class="logo"></a></div>
+    <ul class="menu block_menu">
+        <li><a class="btn-menu" href="index3.html">Home</a></li>
+        <li><a class="btn-menu" href="about3.html">About Us</a></li>
+        <li><a class="btn-menu" href="publication3.html">Publications</a></li>
+        <li><a class="btn-menu" href="events3.html">Events</a></li>
+    </ul>
+    <button class="hamburger">
+        <a class="menuIcon menu-open"></a>
+        <a class="closeIcon menu-close"></a>
+    </button>
+    <div><a href="donate3.html" class="donate-button3">
+        Donate</a>
+    </div>
+</header>
+
+<!------- Content --------->
+<section class="about-top-block">
+
+    <div class="zoom"></div>
+    <main role="main">
+        <div class="zoom-content">
+
+           <div id="Div1">
+            <h1 class="meet-us">How you can help</h1>
+
+            <div class="donate">
+                <p class="p-txt">Please help us end the suffering of animals by donating today and supporting
+                    our work.<br><br>
+                    Your donations enable us to work on:<br><br>
+
+                    — The rescue, relocation and rehabilitation of abused and suffering animals<br>
+                    — Undercover investigations<br>
+                    — Cutting edge scientific humane research<br>
+                    — Providing information to schools<br>
+                    — You make this possible. Thank you!<br><br>
+
+                    ADI is entirely reliant on donations from individuals like you. Please
+                    help us end the abuse of animals by donating today.
+                </p>
+
+                <div class="donate-form">
+                    <h2 class="donate-h2">Donation Form</h2>
+
+                    <form class="full-name">
+                        <div class="left-block">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="firstname" name="fname" placeholder="First Name" class="input-style">
+                        </div>
+                        <div class="right-block">
+                         <label for="lastname">Last name:</label><br>
+                         <input type="text" name="lastname" placeholder="Last Name" class="input-style">
+                        </div>
+                    </form>
+                    <form>
+                        <div>
+                            <label for="lastname">E-mail: <span class="red">*</span></label><br>
+                            <input type="text" placeholder="ex: myname@example.com" name="lastname" class="input-style">
+                        </div>
+                        <div class="input-top">
+                            <label for="lastname">Phone Number <span class="red">*</span></label><br>
+                            <input type="text" name="lastname" placeholder="(000) 000-0000" class="input-style">
+                        </div>
+                        <div>
+                            <p class="input-top">Type of donation <span class="red">*</span></p>
+                            <ul class="type-of-donation">
+                                <li class="buttons-list">
+                                    <input type="radio" name="fav_language" value="HTML">
+                                    <label for="html">Love Offering</label>
+                                </li>
+                                <li class="buttons-list">
+                                    <input type="radio" name="fav_language" value="CSS">
+                                    <label for="css">Building Expansion</label>
+                                </li>
+                                <li class="buttons-list">
+                                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                    <label for="javascript">JOne Time Donation</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input-top">
+                            <label for="lname">Donation Ammount <span class="red">*</span></label><br><br>
+                            <textarea id="w3review" name="w3review" rows="10" cols="55"></textarea>
+                        </div>
+                        <div class="input-top">
+                            <label for="lname">Phone Number <span class="red">*</span></label><br>
+                            <input type="text" id="lname" name="lname" placeholder="Please enter your donation amount" class="amount">
+                        </div>
+                        <div>
+                            <p class="input-top">Payment Methods</p>
+                            <ul class="type-of-donation">
+                                <li class="buttons-list">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Debit or Credit Card</label>
+                                </li>
+                                <li class="buttons-list">
+                                    <input type="radio" id="css" name="fav_language" value="CSS">
+                                    <label for="css">Pay Pal</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                    <form class="cardss">
+                        <div>
+                            <label for="fname">Credit Card Number</label><br>
+                            <input type="text" id="fname" name="fname" placeholder=".... .... .... ...." class="input-style">
+                        </div>
+                        <div>
+                            <label for="lastname">Security Code</label><br>
+                            <input type="text" id="lastname" name="lname" placeholder="CVC" class="input-style">
+                        </div>
+                        <div class="input-top">
+                            <label for="lastname">Card Expiration</label><br>
+                            <input type="text" id="lastname" name="lname" placeholder="MM/YY" class="input-style">
+                        </div>
+                    </form>
+                    <div><input type="submit" class="submit-btn" value="Submit" onclick="switchVisible();"></div>
+                   </div>
+            </div>
+
+         </div>
+         <div id="Div2" class="thank-you">Thank you!</div>
+
+        </div>
+    </main>
+</section>
+
+<!------- Footer --------->
+<footer class="footer_style3">
+    Copyright 2021
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
