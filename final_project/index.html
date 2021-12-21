@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olha Dubrovna: Final Project</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/slider.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/chief-slider-with-prefixes.min.css">
+    <script defer src="slider/chief-slider.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('.slider', {
+                loop: true,
+                autoplay: true,
+                interval: 7000,
+            });
+        });
+    </script>
+</head>
+<body>
+<!------- Header --------->
+<header>
+    <div><a href="index.html" class="logo"></a></div>
+    <ul class="menu block_menu">
+        <li><a class="btn-menu btn-2 menu-top" href="index.html">Home</a></li>
+        <li><a class="btn-menu btn-2" href="about.html">About Us</a></li>
+        <li><a class="btn-menu btn-2" href="publication.html">Publications</a></li>
+        <li><a class="btn-menu btn-2" href="events.html">Events</a></li>
+    </ul>
+    <button class="hamburger">
+        <a class="menuIcon menu-open"></a>
+        <a class="closeIcon menu-close"></a>
+    </button>
+    <div><a href="donate.html" class="donate-button donate-btn btn-1">
+        <svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Donate</a>
+    </div>
+</header>
+
+<!------- Content --------->
+<section class="content">
+
+    <!-------------------  Slider  ------------------------------------>
+    <div class="container">
+
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item slide_img2">
+                        <!-- 1 slide -->
+                        <h1 class="slide_h1">Help build a night house for Tarzan and Tanya</h1>
+                        <p>This GivingTuesday, the world’s biggest day of generosity, we are hoping
+                            to raise funds to build a night house for ex-circus survivors Tarzan and
+                            Tanya. Night houses have rooms for treatment and provide a warm place
+                            to sleep.</p>
+                        <a href="donate.html" class="order-now">Ways you can help</a>
+                    </div>
+                    <div class="slider__item slide_img">
+                        <!-- 2 slide  -->
+                        <h1 class="slide_h1">Emptying the cages —<br> saving lives</h1>
+                        <p>Every purchase from our NEW clothing store will help us
+                            continue to secure laws to end circus suffering, help enforce
+                            bans, rescue animals and save future generations from being
+                            born into circus cruelty. Each item is made from natural
+                            materials.</p>
+                        <a href="index.html" class="order-now">Order Now</a>
+
+                    </div>
+                    <div class="slider__item slide_img3">
+                        <!-- 3 slide  -->
+                        <h1 class="slide_h1 slide3">Rescue update:<br> The monkeys are home</h1>
+                        <p class="slide3">Chepa, Pirate, Otto and Matias step from their travel crates into their
+                            rainforest home. Stolen from the wild as babies and sold as pets, what
+                            must the four little capuchins be thinking as they hear, see and smell
+                            the forest again after all these years? </p>
+                        <a href="publication.html" class="order-now2">Read about their journey</a>
+                    </div>
+                    <div class="slider__item slide_img4">
+                        <!-- 4 slide  -->
+                        <h1 class="slide_h1">TEAPSPA reintroduced!</h1>
+                        <p>The Traveling Exotic Animal & Public Safety Protection Act (TEAPSPA),
+                            to ban wild and exotic traveling animal acts in the US, was reintroduced
+                            to the 117th Congress on November 17. Watch a replay of the launch event
+                            and urge your legislators to support bills HR5999 and S3220.</p>
+                        <a href="events.html" class="order-now">Help stop circus suffering!</a>
+                    </div>
+                    <div class="slider__item slide_img5">
+                        <!-- 5 slide  -->
+                        <h1 class="slide_h1">New Jersey bans cosmetics tested on animals</h1>
+                        <p>New Jersey has banned the sale of cosmetic products tested on animals,
+                            effective March 1, 2022. Governor Phil Murphy signed bills S1726/A795
+                            into law, which applies to products tested on animals after January 1,
+                            2020. </p>
+                        <a href="publication.html" class="order-now">Take action here</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+            <ol class="slider__indicators">
+                <li data-slide-to="0"></li>
+                <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+            </ol>
+        </div>
+
+    </div>
+    <!-------------------  Slider end ------------------------------------->
+
+
+    <!-------------------  who we are block ------------------------------------->
+
+    <div class="who-we-are block-who">
+        <h1 data-scroll="toggle(.fromTopIn, .fromTopOut) addHeight">Who we are, what we do</h1>
+        <p data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">We create public awareness of animal suffering and
+            combine this with scientific and economic research. We provide
+            technical briefings to legislators and governments. ADI rescues animals all over
+            the world and educates the public on animals and environmental issues.</p>
+    </div>
+
+    <!-------------------  who we are block end ------------------------------------->
+
+    <div class="lifestyle">
+        <div class="img-container">
+            <a class="img_block1 block card">
+                <div class="capture_txt imgBx"><div class="arrow">Animal Rescues</div></div>
+                <div class="details">Having secured and helped enforce an animal circus
+                    ban in Bolivia, ADI returned to Latin America to assist
+                    the authorities in Peru and Colombia. Over 100 animals
+                    were rescued during Operation Spirit of Freedom.
+                    <div class="learn-more-btn">Learn more</div>
+                </div>
+            </a>
+            <a href="index.html"  class="img_block2 block card">
+                <div class="capture_txt2 imgBx"><div class="arrow">Investigations</div></div>
+                <div class="details">Exposing what the animal abusers want to keep secret,
+                    ADI shines a light on Fur farms... The movie industry... Primates born
+                    to suffer... Britain’s last circus elephant... and more...
+                    <div class="learn-more-btn">Learn more</div>
+                </div>
+            </a>
+            <a href="index.html"  class="img_block3 block card">
+                <div class="capture_txt3 imgBx"><div class="arrow">Saving Animals</div></div>
+                <div class="details">ADI exposes suffering, educates and secures permanent
+                    change. Successes include: Circus bans in 48 countries and 108 US
+                    jurisdictions... Cosmetics testing ban in Europe... and more...
+                    <div class="learn-more-btn">Learn more</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-------------------  who we are block ------------------------------------->
+
+    <div class="quote block-who">
+        <p data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">"These lions have
+            endured hell on earth and now they are heading home to paradise. This is the world
+            for which nature intended these animals for, it is the perfect ending to ADI’s
+            operation which has eliminated circus suffering in another country."</p>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight" class="author">– Jan Creamer</div>
+    </div>
+
+
+    <!-------------------  video ------------------------------------->
+
+    <div  class="parallax-world-of-ugg">
+        <div class="parallax-one">
+            <div class="video-block">
+                <div class="video">Video</div>
+                <div class="video-txt">
+                    <h3>Bill Launched to Stop Circus Suffering in the United States</h3>
+                    <p>Watch the launch of a bill to end the use of wild & exotic animals in circuses
+                        in the U.S. Hosted by Daytime Emmy Award nominated, Kim Matula (The Bold & The
+                        Beautiful, LA to Vegas, Fighting With My Family) and featuring the sponsors of
+                        the Traveling Exotic Animal & Public Safety Protection Act (TEAPSPA) Rep. Raul M.
+                        Grijalva, Rep. David Schweikert, & Senator Bob Menendez; Dr. Betsy Coville
+                        (USDA-accredited veterinarian with over 30-years of experience working with exotic
+                        animals, and with a Masters in Veterinary Forensic Sciences).</p>
+                    <a href="index.html" class="watch-video">Watch video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------  adi ------------------------------------->
+
+    <div class="products">
+        <ul>
+            <li><a href="index.html" class="adi-block">ADI USA</a></li>
+            <li><a href="index.html" class="adi-block2">ADI Uk & Europe</a></li>
+            <li><a href="index.html" class="adi-block3">ADI Africa</a></li>
+            <li><a href="index.html" class="adi-block4">ADI Latin America</a></li>
+        </ul>
+    </div>
+
+
+</section>
+
+<!------- Footer --------->
+<footer class="footer_style">
+    Copyright 2021
+</footer>
+
+<script>
+    window.counter = function() {
+        // this refers to the html element with the data-scroll-showCallback tag
+        var span = this.querySelector('span');
+        var current = parseInt(span.textContent);
+
+        span.textContent = current + 1;
+    };
+    document.addEventListener('DOMContentLoaded', function(){
+        ScrollTrigger.init();
+    });
+</script>
+
+<script src="js/script.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+</body>
+</html>
